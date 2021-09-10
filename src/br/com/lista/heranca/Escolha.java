@@ -1,3 +1,4 @@
+
 package br.com.lista.heranca;
 
 import java.util.Scanner;
@@ -12,7 +13,7 @@ public class Escolha {
 		Cachorro cachorrinho = new Cachorro();
 		Cavalo cavalinho = new Cavalo();
 		Preguica preguicinha = new Preguica();
-
+		
 		System.out.println("Olá, deseja saber sobre qual animal?");
 		System.out.println("1 - Cachorro");
 		System.out.println("2 - Cavalo");
@@ -31,3 +32,4 @@ public class Escolha {
 
 	}
 }
+

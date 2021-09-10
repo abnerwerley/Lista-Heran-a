@@ -9,6 +9,7 @@ public class Principal {
 
 		Escolha escolha1 = new Escolha();
 		escolha1.escolhendo();
+		
 		/*
 		 * Scanner entrada = new Scanner(System.in); Cachorro cachorrinho = new
 		 * Cachorro(); Cavalo cavalinho = new Cavalo(); Preguica preguicinha = new

@@ -3,7 +3,7 @@ package br.com.lista.heranca;
 import java.util.Scanner;
 
 //Exercício 1 | Author: Abner Werley | Date:09/set/2021
-public class Cavalo extends Animal {
+public class Cavalo implements SuperAnimal {
 
 	private String correr;
 	private String trotar;
@@ -33,6 +33,31 @@ public class Cavalo extends Animal {
 		this.montavel = montavel;
 	}
 
+	//@Overrides
+	@Override
+	public String nome(String nome) {
+		// TODO Auto-generated method stub
+		return nome;
+	}
+
+	@Override
+	public int idade(int idade) {
+		// TODO Auto-generated method stub
+		return idade;
+	}
+
+	@Override
+	public String som(String som) {
+		// TODO Auto-generated method stub
+		return som;
+	}
+
+	@Override
+	public String alimentacao(String alimentacao) {
+		// TODO Auto-generated method stub
+		return alimentacao;
+	}
+
 	public void definindoCavalo() {
 
 		Scanner entrada = new Scanner(System.in);
@@ -41,16 +66,17 @@ public class Cavalo extends Animal {
 
 		int opcao;
 
-		cavalo1.setNome("Cavalo");
-		cavalo1.setIdade(30);
-		cavalo1.setAlimentacao("herbívora");
-		cavalo1.setSom("relincha (iiirrrrí)");
+		/*
+		 * cavalo1.setNome("Cavalo"); cavalo1.setIdade(30);
+		 * cavalo1.setAlimentacao("herbívora"); cavalo1.setSom("relincha (iiirrrrí)");
+		 */
 		cavalo1.setCorrer("corre");
 		cavalo1.setTrotar("trota");
 
-		System.out.println("O " + cavalo1.getNome() + " pode viver até " + cavalo1.getIdade()
-				+ " anos, e tem uma alimentação " + cavalo1.getAlimentacao() + ". Além de " + cavalo1.getTrotar() + " e "
-				+ cavalo1.getCorrer() + " ele " + cavalo1.getSom() + ".");
+		System.out.println(
+				"O " + cavalo1.nome("Cavalo") + " pode viver até " + cavalo1.idade(30) + " anos, e tem uma alimentação "
+						+ cavalo1.alimentacao("herbívora") + ". Além de " + cavalo1.getTrotar() + " e "
+						+ cavalo1.getCorrer() + " ele " + cavalo1.som("relincha (iiirrrrí)") + ".");
 
 		System.out.println();
 		System.out.println("Deseja ver sobre outro animal? Digite 1");
@@ -64,4 +90,5 @@ public class Cavalo extends Animal {
 		entrada.close();
 
 	}
+
 }
