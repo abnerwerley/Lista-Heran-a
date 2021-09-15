@@ -2,8 +2,8 @@ package br.com.lista.heranca;
 
 import java.util.Scanner;
 
-//Exercício 1 | Author: Abner Werley | Date:09/set/2021
 public class Cavalo extends SuperAnimal {
+	//Exercício com poliforfismo e interface | Author: Abner Werley | Date:09/set/2021
 
 	private String correr;
 	private String trotar;

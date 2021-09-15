@@ -3,6 +3,7 @@ package br.com.lista.heranca;
 import java.util.Scanner;
 
 public class Escolhas {
+	//Exercício com poliforfismo e interface | Author: Abner Werley | Date:09/set/2021
 
 	public void escolhendo() {
 		Scanner entrada = new Scanner(System.in);

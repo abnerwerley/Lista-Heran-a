@@ -1,7 +1,7 @@
 package br.com.lista.heranca;
 
-//Exercício 1 com poliforfismo e interface | Author: Abner Werley | Date:09/set/2021
 public class SuperAnimal implements InterfaceSom{ //a super classe implementa a interface e o override deve ser adicionado
+//Exercício com poliforfismo e interface | Author: Abner Werley | Date:09/set/2021
 
 	
 	private String nome;
